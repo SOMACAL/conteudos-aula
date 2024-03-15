@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class TrocaValores {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,14 +10,20 @@ public class Main {
         System.out.print("Digite o valor de B: ");
         int B = scanner.nextInt();
 
-        // Verificação e exibição do maior número
-        if (A == B) {
-            System.out.println("A sequência de números informados é inválida.");
-        } else if (A > B) {
-            System.out.println("A é o maior número.");
-        } else {
-            System.out.println("B é o maior número.");
-        }
+        // Exibição dos valores originais
+        System.out.println("Valores originais:");
+        System.out.println("A: " + A);
+        System.out.println("B: " + B);
+
+        // Troca dos valores de A e B
+        int temp = A;
+        A = B;
+        B = temp;
+
+        // Exibição dos valores trocados
+        System.out.println("\nValores trocados:");
+        System.out.println("A: " + A);
+        System.out.println("B: " + B);
         
         scanner.close();
     }
