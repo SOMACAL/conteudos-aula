@@ -1,30 +1,30 @@
 import java.util.Scanner;
 
-public class TrocaValores {
+public class TrocaDeValores {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Leitura dos valores de A e B
+        // Leia os valores de A e B
         System.out.print("Digite o valor de A: ");
         int A = scanner.nextInt();
         System.out.print("Digite o valor de B: ");
         int B = scanner.nextInt();
 
-        // Exibição dos valores originais
+        // Apresente os valores originais
         System.out.println("Valores originais:");
-        System.out.println("A: " + A);
-        System.out.println("B: " + B);
+        System.out.println("A = " + A);
+        System.out.println("B = " + B);
 
-        // Troca dos valores de A e B
+        // Troque os valores
         int temp = A;
         A = B;
         B = temp;
 
-        // Exibição dos valores trocados
+        // Apresente os valores trocados
         System.out.println("\nValores trocados:");
-        System.out.println("A: " + A);
-        System.out.println("B: " + B);
-        
+        System.out.println("A = " + A);
+        System.out.println("B = " + B);
+
         scanner.close();
     }
 }
